@@ -2,6 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Initialize') {
+      agent any
       environment {
         dockerHome = 'myDocker'
         mavenHome = 'myMaven'
