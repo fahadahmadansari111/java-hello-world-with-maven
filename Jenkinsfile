@@ -19,4 +19,8 @@ pipeline {
     }
 
   }
+  environment {
+    myDocker = 'myDocker'
+    PATH = '${myDocker}/bin:${env.PATH}'
+  }
 }
