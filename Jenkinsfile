@@ -5,7 +5,7 @@ pipeline {
       environment {
         dockerHome = 'myDocker'
         mavenHome = 'myMaven'
-        PATH = '"${dockerHome}/bin:${mavenHome}/bin:${env.PATH}"'
+        PATH = '${dockerHome}/bin:${mavenHome}/bin:${env.PATH}'
       }
       steps {
         sh 'echo "Done"'
